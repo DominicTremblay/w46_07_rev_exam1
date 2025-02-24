@@ -12,8 +12,12 @@ if ($msg_erreur) {
   return;
 }
 
-$categorie_filtre = obtenir_parametre("categorie");
-
 // Obtenir le parametre categorie
-var_dump($categorie_filtre);
+$categorie_filtre = obtenir_parametre("categorie");
+var_dump("Categorie: " . $categorie_filtre);
+echo "<br>";
+echo "<br>";
+
+
+$options = generer_options_categories($produits, $categorie_filtre);
 
