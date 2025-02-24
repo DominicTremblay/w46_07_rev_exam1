@@ -44,7 +44,19 @@
 
 ---
 
-### **3️⃣ Charger les produits JSON et initialiser les variables**
+### **3️⃣Créer les fonctions utiles**
+📌 **Objectif : Manipuler les produits avec des fonctions réutilisables.**
+
+✅ **Instructions :**
+1. Dans `lib/lib.php`, créer les fonctions :
+   - `obtenir_parametre($identifiant)` : extrait le parametre de la requête de façon sécuritaire
+   - `charger_produits($fichier)` : Lit et retourne les produits JSON.
+   - `generer_options_categories($produits)` : Génère dynamiquement les options du `<select>`.
+   - `filtrer_produits($produits, $categorie)` : Retourne les produits correspondant à la catégorie sélectionnée.
+
+---
+
+### 4️⃣ ** Charger les produits JSON et initialiser les variables**
 📌 **Objectif : Lire et décoder les produits depuis le fichier JSON.**
 
 ✅ **Instructions :**
@@ -55,16 +67,6 @@
 
 ---
 
-### **4️⃣ Créer les fonctions utiles**
-📌 **Objectif : Manipuler les produits avec des fonctions réutilisables.**
-
-✅ **Instructions :**
-1. Dans `lib/lib.php`, créer les fonctions :
-   - `charger_produits($fichier)` : Lit et retourne les produits JSON.
-   - `generer_options_categories($produits)` : Génère dynamiquement les options du `<select>`.
-   - `filtrer_produits($produits, $categorie)` : Retourne les produits correspondant à la catégorie sélectionnée.
-
----
 
 ### **5️⃣ Afficher le formulaire de filtrage dans `inventaire.php`**
 📌 **Objectif : Permettre aux utilisateurs de filtrer les produits.**
