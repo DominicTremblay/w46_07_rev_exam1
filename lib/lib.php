@@ -34,3 +34,13 @@ function generer_options_categories($produits, $identifiant)
   }
   return $html;
 }
+
+function filtrer_produits($produits, $categorie)
+{
+
+  if ($categorie == "toutes") {
+    return $produits;
+  }
+  
+  return array_filter($produits, fn($produit) => $produit->categorie === $categorie);
+}
