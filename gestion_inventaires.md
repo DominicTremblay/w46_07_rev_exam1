@@ -44,27 +44,28 @@
 
 ---
 
-### **3️⃣ Charger les produits JSON et initialiser les variables**
-📌 **Objectif : Lire et décoder les produits depuis le fichier JSON.**
-
-✅ **Instructions :**
-1. Dans `includes/init.php` :
-   - Lire `produits.json`.
-   - Définir `$produits` avec `json_decode()`.
-   - Initialiser `$categorie_filtre` en appelant `obtenir_parametre` qui obtiendra `$_GET["categorie"]` sécuritairement si défini. 
-
----
-
-### **4️⃣ Créer les fonctions utiles**
+### **3️⃣Créer les fonctions utiles**
 📌 **Objectif : Manipuler les produits avec des fonctions réutilisables.**
 
 ✅ **Instructions :**
 1. Dans `lib/lib.php`, créer les fonctions :
-   - `charger_produits($fichier)` : Lit et retourne les produits JSON.
+   - `obtenir_parametre($identifiant)` : extrait le parametre de la requête de façon sécuritaire
+   - `charger_fichier_json($fichier)` : Lit et retourne les produits JSON.
    - `generer_options_categories($produits)` : Génère dynamiquement les options du `<select>`.
    - `filtrer_produits($produits, $categorie)` : Retourne les produits correspondant à la catégorie sélectionnée.
 
 ---
+
+### 4️⃣ ** Charger les produits JSON et initialiser les variables**
+📌 **Objectif : Lire et décoder les produits depuis le fichier JSON.**
+
+✅ **Instructions :**
+1. Dans `includes/init.php` :
+   - Lire `produits.json` avec la fonction `lire_fichier_json` et l'affecter a $produit.
+   - Initialiser `$categorie_filtre` en appelant `obtenir_parametre` qui obtiendra `$_GET["categorie"]` sécuritairement si défini. 
+
+---
+
 
 ### **5️⃣ Afficher le formulaire de filtrage dans `inventaire.php`**
 📌 **Objectif : Permettre aux utilisateurs de filtrer les produits.**
@@ -79,8 +80,8 @@
 📌 **Objectif : Afficher la liste des produits sous forme de tableau HTML.**
 
 ✅ **Instructions :**
-1. Utiliser `filtrer_produits()` pour récupérer les produits filtrés.
-2. Parcourir `$produits` avec `foreach` pour générer les lignes du tableau (`<tr>`).
+1. Utiliser `filtrer_produits()` pour récupérer les produits filtrés et les affecter a ``$produits_categorie`.
+2. Parcourir `$produits_categorie` avec `foreach` pour générer les lignes du tableau (`<tr>`).
 3. Afficher **ID, Nom, Prix, Catégorie** dans les colonnes.
 
 ---
