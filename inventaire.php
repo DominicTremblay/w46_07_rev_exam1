@@ -21,16 +21,8 @@
             <input type="submit" value="Filtrer">
         </form>
 
-        <!-- A FAIRE : Ajouter le tableau pour afficher les produits -->
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Nom</th>
-                <th>Prix ($)</th>
-                <th>Catégorie</th>
-            </tr>
-            <!-- A FAIRE : Générer dynamiquement les lignes du tableau -->
-        </table>
+        <!-- A FAIRE : Ajouter le tableau générer dynamiquement pour afficher les produits -->
+  
     </div>
 </body>
 </html>
