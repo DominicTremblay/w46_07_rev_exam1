@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nom": "Ordinateur portable",
+    "prix": 1200,
+    "categorie": "Électronique"
+  },
+  {
+    "id": 2,
+    "nom": "Casque Bluetooth",
+    "prix": 150,
+    "categorie": "Électronique"
+  },
+  {
+    "id": 3,
+    "nom": "Chaise ergonomique",
+    "prix": 200,
+    "categorie": "Mobilier"
+  },
+  {
+    "id": 4,
+    "nom": "Clavier mécanique",
+    "prix": 100,
+    "categorie": "Électronique"
+  },
+  {
+    "id": 5,
+    "nom": "Lampe de bureau",
+    "prix": 50,
+    "categorie": "Mobilier"
+  },
+  {
+    "id": 6,
+    "nom": "Tapis de souris XXL",
+    "prix": 30,
+    "categorie": "Accessoires"
+  }
+]
