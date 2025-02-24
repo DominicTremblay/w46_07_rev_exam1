@@ -1,38 +1,62 @@
 [
   {
     "id": 1,
-    "nom": "Ordinateur portable",
-    "prix": 1200,
-    "categorie": "Électronique"
+    "nom": "L'Anneau Unique",
+    "prix": 1000000,
+    "categorie": "Artefact"
   },
   {
     "id": 2,
-    "nom": "Casque Bluetooth",
-    "prix": 150,
-    "categorie": "Électronique"
+    "nom": "Andúril, Flamme de l'Ouest",
+    "prix": 5000,
+    "categorie": "Arme"
   },
   {
     "id": 3,
-    "nom": "Chaise ergonomique",
-    "prix": 200,
-    "categorie": "Mobilier"
+    "nom": "Arc de Legolas",
+    "prix": 2500,
+    "categorie": "Arme"
   },
   {
     "id": 4,
-    "nom": "Clavier mécanique",
-    "prix": 100,
-    "categorie": "Électronique"
+    "nom": "Cotte de Mithril",
+    "prix": 7500,
+    "categorie": "Armure"
   },
   {
     "id": 5,
-    "nom": "Lampe de bureau",
-    "prix": 50,
-    "categorie": "Mobilier"
+    "nom": "Pipe de Gandalf",
+    "prix": 100,
+    "categorie": "Accessoire"
   },
   {
     "id": 6,
-    "nom": "Tapis de souris XXL",
-    "prix": 30,
-    "categorie": "Accessoires"
+    "nom": "Grimoire de Saroumane",
+    "prix": 3000,
+    "categorie": "Tome Magique"
+  },
+  {
+    "id": 7,
+    "nom": "Cor de Gondor",
+    "prix": 1200,
+    "categorie": "Accessoire"
+  },
+  {
+    "id": 8,
+    "nom": "Lembas",
+    "prix": 50,
+    "categorie": "Nourriture"
+  },
+  {
+    "id": 9,
+    "nom": "Élixir d'Elrond",
+    "prix": 200,
+    "categorie": "Potion"
+  },
+  {
+    "id": 10,
+    "nom": "Bâton de Gandalf",
+    "prix": 6000,
+    "categorie": "Arme"
   }
 ]

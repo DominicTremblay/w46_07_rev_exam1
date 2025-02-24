@@ -51,7 +51,7 @@
 1. Dans `includes/init.php` :
    - Lire `produits.json`.
    - Définir `$produits` avec `json_decode()`.
-   - Initialiser `$categorie_filtre` en récupérant `$_GET["categorie"]` si défini.
+   - Initialiser `$categorie_filtre` en appelant `obtenir_parametre` qui obtiendra `$_GET["categorie"]` sécuritairement si défini. 
 
 ---
 
