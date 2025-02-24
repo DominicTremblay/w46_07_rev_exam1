@@ -12,7 +12,8 @@ if ($msg_erreur) {
   return;
 }
 
-var_dump($msg_erreur);
-var_dump($produits);
+$categorie_filtre = obtenir_parametre("categorie");
 
-// Obtenir le parametre filtre
+// Obtenir le parametre categorie
+var_dump($categorie_filtre);
+

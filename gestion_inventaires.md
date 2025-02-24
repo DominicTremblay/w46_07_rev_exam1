@@ -50,7 +50,7 @@
 ✅ **Instructions :**
 1. Dans `lib/lib.php`, créer les fonctions :
    - `obtenir_parametre($identifiant)` : extrait le parametre de la requête de façon sécuritaire
-   - `charger_produits($fichier)` : Lit et retourne les produits JSON.
+   - `charger_fichier_json($fichier)` : Lit et retourne les produits JSON.
    - `generer_options_categories($produits)` : Génère dynamiquement les options du `<select>`.
    - `filtrer_produits($produits, $categorie)` : Retourne les produits correspondant à la catégorie sélectionnée.
 

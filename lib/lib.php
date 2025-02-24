@@ -9,3 +9,12 @@ function lire_fichier_json($nom_fichier)
 
   return [null, "Le fichier n'existe pas"];
 }
+
+function obtenir_parametre($identifiant) {
+  $valeur_parametre = filter_input(INPUT_GET, $identifiant, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+  if (!isset($valeur_parametre)) {
+    $valeur_parametre = filter_input(INPUT_POST, $identifiant, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+  }
+
+  return $valeur_parametre;
+}
