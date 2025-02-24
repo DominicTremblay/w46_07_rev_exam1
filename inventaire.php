@@ -13,27 +13,23 @@
     <div class="container">
         <h1>Gestion d'inventaire</h1>
 
+        <h2 class="msg-erreur"><?= $config["message_erreur"]?></h2>
+
         <!-- A FAIRE : Ajouter un formulaire pour filtrer les produits -->
         <form method="GET">
             <label for="categorie">Filtrer par catégorie :</label>
             <select name="categorie" id="categorie">
-                <option value="toutes">Toutes</option>
+                <option value="">Toutes</option>
                 <!-- A FAIRE : Ajouter dynamiquement les options de catégories -->
                 <?= $options ?>
             </select>
             <input type="submit" value="Filtrer">
         </form>
 
-        <!-- A FAIRE : Ajouter le tableau pour afficher les produits -->
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Nom</th>
-                <th>Prix ($)</th>
-                <th>Catégorie</th>
-            </tr>
-            <!-- A FAIRE : Générer dynamiquement les lignes du tableau -->
-        </table>
+        <!-- A FAIRE : Ajouter le tableau  générer dynamiquement pour afficher les produits -->
+   
+        <?= $table_html ?>
+  
     </div>
 </body>
 

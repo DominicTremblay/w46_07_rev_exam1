@@ -14,11 +14,14 @@ if ($msg_erreur) {
 
 // Obtenir le parametre categorie
 $categorie_filtre = obtenir_parametre("categorie");
-var_dump("Categorie: " . $categorie_filtre);
 echo "<br>";
 echo "<br>";
 $options = generer_options_categories($produits, $categorie_filtre);
 
 $produits_categorie = filtrer_produits($produits, $categorie_filtre);
 
-print_r($produits_categorie);
+
+
+$table_html = generer_table_html($produits_categorie);
+
+

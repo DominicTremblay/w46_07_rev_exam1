@@ -61,8 +61,7 @@
 
 ✅ **Instructions :**
 1. Dans `includes/init.php` :
-   - Lire `produits.json`.
-   - Définir `$produits` avec `json_decode()`.
+   - Lire `produits.json` avec la fonction `lire_fichier_json` et l'affecter a $produit.
    - Initialiser `$categorie_filtre` en appelant `obtenir_parametre` qui obtiendra `$_GET["categorie"]` sécuritairement si défini. 
 
 ---
@@ -81,8 +80,8 @@
 📌 **Objectif : Afficher la liste des produits sous forme de tableau HTML.**
 
 ✅ **Instructions :**
-1. Utiliser `filtrer_produits()` pour récupérer les produits filtrés.
-2. Parcourir `$produits` avec `foreach` pour générer les lignes du tableau (`<tr>`).
+1. Utiliser `filtrer_produits()` pour récupérer les produits filtrés et les affecter a ``$produits_categorie`.
+2. Parcourir `$produits_categorie` avec `foreach` pour générer les lignes du tableau (`<tr>`).
 3. Afficher **ID, Nom, Prix, Catégorie** dans les colonnes.
 
 ---

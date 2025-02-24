@@ -81,6 +81,10 @@ tr:hover {
   background-color: #f1f1f1;
 }
 
+.msg-erreur {
+  color: red;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   form {
@@ -88,3 +92,5 @@ tr:hover {
       align-items: center;
   }
 }
+
+

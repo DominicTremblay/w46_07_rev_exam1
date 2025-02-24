@@ -3,5 +3,5 @@
 
 return [
   "nom_fichier_produits" => "data/produits.json",
-  "message_erreur" => "Sélectionnez une catégorie valide."
+  "message_erreur" => ""
 ];
