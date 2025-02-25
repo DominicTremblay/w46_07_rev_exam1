@@ -100,3 +100,46 @@ tr:hover {
     align-items: center;
   }
 }
+
+
+
+/* Ajout du style pour la page ajouter_produits.php */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button {
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    background-color: #fdd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.success {
+    color: green;
+    background-color: #dfd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
