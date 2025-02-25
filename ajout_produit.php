@@ -33,13 +33,13 @@ require_once 'includes/includes.php';
     <input type="hidden" name="action" value="ajouter-produit">
 
     <label for="nom">Nom du Produit :</label>
-    <input type="text" name="nom" id="nom" required>
+    <input type="text" name="nom" id="nom">
 
     <label for="prix">Prix :</label>
-    <input type="text" name="prix" id="prix" required>
+    <input type="text" name="prix" id="prix">
 
     <label for="categorie">Catégorie :</label>
-    <input type="text" name="categorie" id="categorie" required>
+    <input type="text" name="categorie" id="categorie">
 
     <button type="submit">Ajouter</button>
   </form>
