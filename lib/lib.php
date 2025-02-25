@@ -117,3 +117,26 @@ function date_litteral($date)
   $annee = $date->format("Y");
   return "$jour_semaine $jour $mois $annee";
 }
+
+function valider_frm_ajout($nom, $prix, $categorie)
+{
+  $erreur = [];
+
+  if (empty($nom)) {
+    array_push($erreur, "Le nom du produit est requis.");
+  }
+
+  if (empty($prix)) {
+    array_push($erreur, "Le prix du produit est requis.");
+  }
+
+  if ($prix < 0) {
+    array_push($erreur, "Le prix doit être un entier positif.");
+  }
+
+  if (empty($categorie)) {
+    array_push($erreur, "La catégorie du produit est requise.");
+  }
+
+  return $erreur;
+}

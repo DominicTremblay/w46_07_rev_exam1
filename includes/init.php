@@ -26,6 +26,16 @@ $table_html = generer_table_html($produits_categorie);
 
 $date = date_litteral("2025-02-25");
 
+// valider le formulaire si action=ajouter-produit
 
+$action = obtenir_parametre("action");
 
-
+if ($action == "ajouter-produit") {
+  $nom = obtenir_parametre("nom");
+  $prix = obtenir_parametre("prix");
+  $categorie = obtenir_parametre(("categorie"));
+  $config["erreurs_validation_frm"] = valider_frm_ajout($nom, $prix, $categorie);
+  if (empty($config["erreurs_validation_frm"])) {
+    $config["message_succes_frm"] = "Produit ajouté avec succès.";
+  }
+}
