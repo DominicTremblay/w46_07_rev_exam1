@@ -3,5 +3,7 @@
 
 return [
   "nom_fichier_produits" => "data/produits.json",
-  "message_erreur" => ""
+  "message_erreur" => "",
+  "erreurs_validation_frm" => [],
+  "message_succes_frm" => ""
 ];

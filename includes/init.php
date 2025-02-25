@@ -27,3 +27,5 @@ $table_html = generer_table_html($produits_categorie);
 $date = date_litteral("2025-02-25");
 
 
+
+
