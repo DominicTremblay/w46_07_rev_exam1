@@ -18,9 +18,15 @@ body {
 }
 
 /* En-tête */
-h1 {
+h1,
+h2,
+h3 {
   text-align: center;
-  color: #007BFF;
+  color: #007bff;
+}
+
+h3 {
+  color: darkorange;
 }
 
 /* Formulaire */
@@ -35,7 +41,8 @@ label {
   font-weight: bold;
 }
 
-select, input[type="submit"] {
+select,
+input[type='submit'] {
   padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -46,15 +53,15 @@ select {
   background-color: #fff;
 }
 
-input[type="submit"] {
-  background-color: #007BFF;
+input[type='submit'] {
+  background-color: #007bff;
   color: white;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: #0056b3;
 }
 
@@ -66,14 +73,15 @@ table {
   background: white;
 }
 
-th, td {
+th,
+td {
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
 th {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
 }
 
@@ -88,7 +96,7 @@ tr:hover {
 /* Responsive */
 @media (max-width: 600px) {
   form {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
