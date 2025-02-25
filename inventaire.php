@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <h1>Gestion d'inventaire</h1>
+        <h3><?= $date ?></h3>
 
         <h2 class="msg-erreur"><?= $config["message_erreur"]?></h2>
 

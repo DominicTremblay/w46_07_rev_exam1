@@ -75,3 +75,45 @@ function generer_table_html($produits)
 
   return $html;
 }
+
+
+function date_litteral($date)
+{
+  $date = new DateTime($date);
+
+  $liste_jours = [
+    "Monday" => "Lundi",
+    "Tuesday" => "Mardi",
+    "Wednesday" => "Mercredi",
+    "Thursday" => "jeudi",
+    "Friday" => "Vendredi",
+    "Satruday" => "Samedi",
+    "Sunday" => "Dimanche"
+  ];
+
+  $liste_mois = [
+    "January" => "janvier",
+    "February" => "février",
+    "March" => "mars",
+    "April" => "avril",
+    "May" => "mai",
+    "June" => "juin",
+    "July" => "juillet",
+    "August" => "août",
+    "September" => "septembre",
+    "October" => "octobre",
+    "November" => "novembre",
+    "December" => "décembre"
+  ];
+
+  $date->modify("-7 days");
+  $date->modify("+1 month");
+
+  // l jour litteral
+  // F mois litteral
+  $jour_semaine = $liste_jours[$date->format("l")];
+  $jour = $date->format("j");
+  $mois = $liste_mois[$date->format("F")];
+  $annee = $date->format("Y");
+  return "$jour_semaine $jour $mois $annee";
+}
